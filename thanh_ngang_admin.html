@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thang ngang admin</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit&display=swap">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+        .navbar {
+            background-color: #005DB4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            height: 80px;
+        }
+        .navbar .logo {
+            font-size: 60px;
+            font-weight: bold;
+            margin-left: 70px;
+        }
+        .navbar .logo a {
+            text-decoration: none;  
+            color: white;
+        }
+        .navbar .nav-qlls {
+            display: flex;
+            gap: 300px;
+        }
+        .navbar .nav-qlls a {
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .navbar .dangxuat {
+            color: white;
+            font-size: 30px;
+            margin-right: 70px; /* Add margin for spacing */
+            font-weight:bold;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            position: relative;
+        }
+
+        .navbar a:before {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 4.5px;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+
+        .navbar a:hover:before {
+            width: 100%;
+        }
+        
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo"><a href="#">SPSO</a></div>
+        <div class="nav-qlls">
+            <a href="#">QUẢN LÝ MÁY IN</a>
+            <a href="#">QUẢN LÝ SINH VIÊN</a>
+            <a href="#">LỊCH SỬ IN</a>
+        </div>
+        <a href="homepage-notLogged.html" class="dangxuat">ĐĂNG XUẤT</a>
+        
+    </div>
+</body>
+
+</html>

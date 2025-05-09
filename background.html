@@ -1,0 +1,87 @@
+<style>
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 904px;
+        width: 100%;
+        align-items: flex-end;
+        padding: 100px 1000px 600px;
+    }
+    
+    .hero-background {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .hero-foreground {
+        aspect-ratio: 1.67;
+        object-fit: contain;
+        object-position: center;
+        width: 669px;
+        margin-bottom: -68px;
+        max-width: 100%;
+    }
+    
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+    
+    @media (max-width: 991px) {
+        .hero-container {
+            max-width: 100%;
+            padding: 100px 0 100px 20px;
+        }
+        
+        .hero-foreground {
+            margin-bottom: 10px;
+        }
+    }
+    .logo {
+        position: absolute;
+        width: 200px; /* Đặt kích thước */
+        height: auto; /* Đảm bảo tỉ lệ gốc */
+        bottom: 100px; /* Căn lề từ dưới lên */
+        right: 150px; /* Căn lề từ phải qua */
+        z-index: 2;
+    }
+    
+
+
+
+
+    </style>
+    
+    <section class="hero-container" role="region" aria-label="Hero Section">
+        <img 
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/c28df53c53654f368c6a69a3a109bab7/6880ce43eef83fb24e4783b3c6a013cdf0f866f01794fcc58aeaffca03dc842e?apiKey=c28df53c53654f368c6a69a3a109bab7&"
+            class="hero-background"
+            alt=""
+            aria-hidden="true"
+        />
+        <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/c28df53c53654f368c6a69a3a109bab7/3a7b6e0b76fbb0b1c15290ab2a5195d4cd2d3f1d9ef0065643a339bc0b64661a?apiKey=c28df53c53654f368c6a69a3a109bab7&"
+            class="hero-foreground"
+            alt="Hero section main image"
+        />
+        <img 
+            loading="lazy"
+            src="printer.png" 
+            class="logo" 
+            alt="Printer"
+        />
+    </section>
